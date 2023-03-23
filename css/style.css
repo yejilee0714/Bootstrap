@@ -1,0 +1,69 @@
+/* 초기화 */
+h1, h2, h3, h4, h5, h6, p, ul, li, strong, span, button, a{
+    margin: initial;
+    padding: initial;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+:root {
+    --bs-body-font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* 사이즈 확인 */
+header{
+    box-shadow: inset 0 0 10px 0px black;
+}
+
+/* nav{
+    box-shadow: inset 0 0 10px 0px red;
+} */
+
+main{
+    box-shadow: inset 0 0 10px 0px orange;
+}
+
+section{
+    box-shadow: inset 0 0 10px 0px pink;
+}
+
+footer{
+    box-shadow: inset 0 0 10px 0px olivedrab;
+}
+
+/* 레이아웃 */
+.title-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.title-name{
+    flex-basis: 20%;
+    flex-shrink: 0;
+}
+
+.title-menu-list{
+    display: flex;
+}
+
+.title-menu-list li:not(:last-of-type)::after{
+    content: '';
+    margin: 0 10px;
+    border: 1px solid black;
+}
+
+main{
+    padding: 0 30px;
+}
+
+
+@media(max-width: 390px){
+    main{
+        padding: 0;
+    }
+}
