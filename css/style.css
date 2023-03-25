@@ -1,17 +1,31 @@
 /* 초기화 */
-h1, h2, h3, h4, h5, h6, p, ul, li, strong, span, button, a{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li,
+strong,
+span,
+button,
+a {
     margin: initial;
     padding: initial;
 }
 
-a, button{
+a,
+button {
     color: black;
     border: none;
     text-decoration: none;
     background: none;
 }
 
-ul, li{
+ul,
+li {
     list-style-type: none;
 }
 
@@ -20,8 +34,21 @@ ul, li{
     font-weight: 400;
 }
 
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+.col-md-3 {
+    flex: 0 0 auto;
+    width: 25%;
+}
+
 /* 사이즈 확인 */
-header{
+header {
     box-shadow: inset 0 0 10px 0px black;
 }
 
@@ -29,20 +56,20 @@ header{
     box-shadow: inset 0 0 10px 0px red;
 } */
 
-main{
+main {
     box-shadow: inset 0 0 10px 0px orange;
 }
 
-section{
-    box-shadow: inset 0 0 10px 0px pink;
+section {
+    box-shadow: inset 0 0 10px 0px rgb(255, 192, 203);
 }
 
-footer{
+footer {
     box-shadow: inset 0 0 10px 0px olivedrab;
 }
 
 /* 레이아웃 */
-.menu-section{
+.menu-section {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,23 +77,23 @@ footer{
     background-color: antiquewhite;
 }
 
-.web-name{
+.web-name {
     flex-basis: 20%;
     flex-shrink: 0;
     font-size: 20px;
 }
 
-.web-menu-list{
+.web-menu-list {
     display: flex;
 }
 
-.web-menu-list li:not(:last-of-type)::after{
+.web-menu-list li:not(:last-of-type)::after {
     content: '';
     margin: 0 10px;
     border: 1px solid black;
 }
 
-.thumbnail{
+.thumbnail {
     padding: 200px 0px;
     background: url('../image/south-korea-morning.jpg') no-repeat 0 0 / cover;
     background-position: bottom;
@@ -75,12 +102,12 @@ footer{
     font-weight: 700;
 }
 
-.title{
+.title {
     margin-bottom: 30px;
     font-size: 48px;
 }
 
-.more{
+.more {
     color: inherit;
     background: hsl(323, 100%, 70%);
     padding: 10px 20px;
@@ -88,12 +115,25 @@ footer{
     font-size: 30px;
 }
 
-main{
-    padding: 0 30px;
+main {
+    padding: 20px 30px;
 }
 
-@media(max-width: 390px){
-    main{
+.resturant-section{
+    margin: 20px 0;
+    box-shadow: none;
+    text-align: center;
+}
+
+.resturant{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 50px;
+}
+
+@media(max-width: 390px) {
+    main {
         padding: 0;
     }
 }
